@@ -1,5 +1,5 @@
 from django.views.decorators.cache import cache_page as _django_cache_page
-from django.utils.decorators import decorator_from_middleware_with_args
+from django.utils.decorators import decorator_from_middleware
 from django_mobile.cache.middleware import (
     FetchFromCacheFlavourMiddleware,
     UpdateCacheFlavourMiddleware,
@@ -8,8 +8,8 @@ from django_mobile.cache.middleware import (
 __all__ = ("cache_page", "vary_on_flavour_fetch", "vary_on_flavour_update")
 
 
-vary_on_flavour_fetch = decorator_from_middleware_with_args(FetchFromCacheFlavourMiddleware)
-vary_on_flavour_update = decorator_from_middleware_with_args(UpdateCacheFlavourMiddleware)
+vary_on_flavour_fetch = decorator_from_middleware(FetchFromCacheFlavourMiddleware)
+vary_on_flavour_update = decorator_from_middleware(UpdateCacheFlavourMiddleware)
 
 
 def cache_page(*args, **kwargs):
