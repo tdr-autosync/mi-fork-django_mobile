@@ -1,10 +1,9 @@
-import hashlib
 from django.template import TemplateDoesNotExist
 from django.template.loaders.cached import Loader as DjangoCachedLoader
+
 from django_mobile import get_flavour
 from django_mobile.conf import settings
-from django_mobile.compat import BaseLoader, template_loader, template_from_string
-from django.utils.encoding import force_bytes
+from django_mobile.compat import BaseLoader, template_loader
 
 
 class Loader(BaseLoader):

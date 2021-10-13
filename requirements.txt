@@ -1,3 +1,4 @@
+argparse==1.4.0
 appdirs==1.4.4
 attr==0.3.1
 attrs==19.3.0

@@ -88,8 +88,7 @@ setup(
     install_requires=[
         "argparse",
         "coverage",
-        "django<3 ; python_version<'3.8'",
-        "django<4 ; python_version=='3.8'",
+        "django",
         "django-discover-runner",
         "mock",
         "pytest",
