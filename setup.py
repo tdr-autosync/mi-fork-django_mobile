@@ -60,7 +60,7 @@ long_description = "\n\n".join((readfile(README_PATH), readfile(CHANGES_PATH),))
 
 
 setup(
-    name="django-mobile",
+    name="autosync-django-mobile",
     version=get_version("django_mobile"),
     url="https://github.com/gregmuellegger/django-mobile",
     license="BSD",
