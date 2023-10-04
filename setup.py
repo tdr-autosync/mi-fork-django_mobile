@@ -87,12 +87,8 @@ setup(
     packages=["django_mobile", "django_mobile.cache",],
     install_requires=[
         "argparse",
-        "coverage",
         "django",
         "django-discover-runner",
-        "mock",
-        "pytest",
-        "pytest-django",
     ],
     tests_require=["django", "mock"],
     test_suite="django_mobile_tests.runtests.runtests",
